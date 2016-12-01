@@ -1,0 +1,10 @@
+<br><br><br>
+
+<ul ng-if="found.length">
+  <li ng-repeat="item in found">
+    {{item.name}}, {{item.short_name}}, {{item.description}} 
+    <button class="btn btn-default" ng-click="remove({index: $index});">
+      <span class="glyphicon glyphicon-ok"></span>Don't want this one!
+    </button>
+  </li>
+</ul>

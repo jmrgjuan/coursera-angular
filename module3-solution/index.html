@@ -19,6 +19,10 @@
 
     <!-- found-items should be implemented as a component -->
     <found-items found="narrow.found" remove="narrow.dontWant(index)"></found-items>
+
+    <div ng-if="narrow.found.length == 0 && !narrow.init">
+      <h2>Nothing is found!</h2>
+    </div>
   </div>
 
   <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
